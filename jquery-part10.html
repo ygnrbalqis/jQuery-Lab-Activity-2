@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – Politeknik Seberang Perai</title>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#" class="nav-button">About Us</a>
+    <a href="#" class="nav-button">Our Services</a>
+    <a href="#" class="nav-button">Registration Form</a>
+    <a href="#" class="nav-button">Contact Us</a>
+  </div>
+  
+  <!-- PSP Logo -->
+  <img src="images/psplogo.png" alt="Politeknik Seberang Perai Logo" class="logo">
+
+  <!-- Contact Info Section -->
+  <div class="contact-info">
+    <p>WhatsApp: <a href="https://wa.me/601165569844" target="_blank">Send a WhatsApp message</a></p>
+    <p>Call: 04-5383322</p>
+    <p>Email: ukk@psp.edu.my</p>
+    <p>Address:<br>
+      Politeknik Seberang Perai, Jalan Permatang Pauh,<br>
+      13500 Permatang Pauh, Pulau Pinang, Malaysia
+    </p>
+  </div>
+
+  <!--Social Media Button Section -->
+  <div class="social-media">
+    <div class="social-btn">Add Us on Facebook</div>
+    <div class="social-btn">Add Us on Twitter</div>
+    <div class="social-btn">Add Us on Instagram</div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+
+      $(".logo").hide().fadeIn(2000);
+
+      $(".nav-button").hover(
+        function () {
+          $(this).css("background-color", "#E9B0A3");
+        },
+        function () {
+          $(this).css("background-color", "#5D1100");
+        }
+      );
+
+      $(".nav-button:last").click(function () {
+        $(".contact-info").slideToggle(1000);
+      });
+
+      $(".social-btn, .back-home").hover(
+        function () {
+          $(this).animate({ padding: "15px 20px" }, 200);
+        },
+        function () {
+          $(this).animate({ padding: "10px 15px" }, 200);
+        }
+      );
+
+    });
+  </script>
+
+  <!-- Reflection Section -->
+  <div class="reflection">
+    <h3>Reflection</h3>
+
+    <p><strong>1. What did you learn about using jQuery in this task?</strong><br>
+      I learned how jQuery simplifies JavaScript by using shorter syntax to control animations, effects, and user interactions.</p>
+
+    <p><strong>2. Which jQuery function or method did you find most useful?</strong><br>
+      The <code>fadeIn()</code> and <code>slideToggle()</code> are most useful because they easily add smooth animations without much code.</p>
+
+    <p><strong>3. How could you apply this technique to enhance a real website?</strong><br>
+      These techniques can make real websites more interactive - for example, animating buttons, toggling menus, or showing contact forms dynamically for a better user experience.</p>
+  </div>
+
+  <!-- Back to Home Button-->
+  <a href="index.html" class="back-home" 
+     style="display: inline-block; background-color: #ffffff; color: rgb(0, 0, 0); padding: 10px 15px; 
+            margin-top: auto; margin-bottom: 30px; text-decoration: none; border-radius: 8px; 
+            text-align: center;">Back to Home</a>
+
+  <!-- Footer Section-->
+  <div data-role="footer" data-position="fixed"
+       style="background-color: rgb(0, 0, 0); color: white; text-shadow: none; text-align: center; padding: 11px;">
+    <h4>© <i>Yang Nur Balqis – 10DIT23F2022</i></h4>
+  </div>
+
+</body>
+</html>

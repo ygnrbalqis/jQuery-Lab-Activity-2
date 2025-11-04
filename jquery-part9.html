@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 9: Page Data Transition #9</title>
+
+  <!-- jQuery Mobile CSS & JS -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+    $(document).on("mobileinit", function () {
+    $.mobile.ajaxEnabled = false;
+    });
+  </script>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+  <!-- HOME PAGE -->
+  <div data-role="page" id="page1" data-theme="a">
+    <div data-role="header" style="background-color:rgb(141,81,141); color:white; text-shadow:none;">
+      <h1>HOME PAGE</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <ul data-role="listview" style="margin-bottom: 20px;">
+        <li><a href="#page2" data-transition="pop">Videos</a></li>
+        <li><a href="#page3" data-transition="slide">Audio</a></li>
+        <li><a href="#page4" data-transition="flow">Pictures</a></li>
+      </ul>
+
+      <!-- Back to Home Button -->
+      <a href="index.html"
+         class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left purple-btn"
+         style="background-color:rgb(141,81,141); color:white; text-shadow:none; margin-top: 20px;">Back to Home</a>
+    </div>
+
+    <div data-role="footer" data-position="fixed" style="background-color:rgb(141,81,141); color:white; text-shadow:none;">
+      <h4>© <i>Yang Nur Balqis – 10DIT23F2022</i></h4>
+    </div>
+  </div>
+
+  <!-- VIDEOS PAGE -->
+  <div data-role="page" id="page2" data-theme="a">
+    <div data-role="header" style="background-color:rgb(141,81,141); color:white; text-shadow:none;">
+      <h1>VIDEOS PANEL</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h1>Welcome to Video Centre</h1>
+      <a href="#page1" data-transition="slidefade">Back</a>
+    </div>
+
+    <div data-role="footer" data-position="fixed" style="background-color:rgb(141,81,141); color:white; text-shadow:none;">
+      <h4>© <i>Yang Nur Balqis – 10DIT23F2022</i></h4>
+    </div>
+  </div>
+
+  <!-- AUDIO PAGE -->
+  <div data-role="page" id="page3" data-theme="a">
+    <div data-role="header" style="background-color:rgb(141,81,141); color:white; text-shadow:none;">
+      <h1>AUDIO PANEL</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h1>Welcome to Audio Centre</h1>
+      <a href="#page1" data-transition="flip">Back</a>
+    </div>
+
+    <div data-role="footer" data-position="fixed" style="background-color:rgb(141,81,141); color:white; text-shadow:none;">
+      <h4>© <i>Yang Nur Balqis – 10DIT23F2022</i></h4>
+    </div>
+  </div>
+
+  <!-- PICTURES PAGE -->
+  <div data-role="page" id="page4" data-theme="a">
+    <div data-role="header" style="background-color:rgb(141,81,141); color:white; text-shadow:none;">
+      <h1>PICTURES PANEL</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h1>Welcome to Pictures Centre</h1>
+      <a href="#page1" data-transition="slideup">Back</a>
+    </div>
+
+    <div data-role="footer" data-position="fixed" style="background-color:rgb(141,81,141); color:white; text-shadow:none;">
+      <h4>© <i>Yang Nur Balqis – 10DIT23F2022</i></h4>
+    </div>
+  </div>
+
+</body>
+</html>

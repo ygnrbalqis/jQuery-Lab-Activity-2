@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 2: Setting Up Pages #2</title>
+
+  <!--jQuery Mobile CSS & JS-->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+    $(document).on("mobileinit", function () {
+    $.mobile.ajaxEnabled = false;
+    });
+  </script>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+<!--Homepage-->
+
+  <div data-role="page" id="Homepage">
+
+    <div data-role="header">
+      <h1>Homepage</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h4>Homepage</h4>  
+      <p>Hello, Yang Nur Balqis! Welcome to Jquery Mobile.</p>
+      <a href="#About">Go to About</a>
+
+<!-- Back to Home Button -->
+      <a href="index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Back to Home</a>
+    </div>      
+
+    <div data-role="footer" data-position="fixed">
+      <h4>©<i>Yang Nur Balqis – 10DIT23F2022</i></h4>
+    </div>
+
+  </div>
+
+<!--About Page-->
+
+  <div data-role="page" id="About">
+
+     <div data-role="header">
+      <h1>About</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h4>About</h4> 
+      <p>jQuery Mobile is a framework that helps you build mobile-friendly websites and apps using HTML, CSS, and JavaScript. It makes your site look good and work smoothly on smartphones, tablets, and desktops without needing separate code for each device.</p>
+      <a href="#Homepage">Back to Homepage</a>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+      <h4>©<i>Yang Nur Balqis – 10DIT23F2022</i></h4>
+    </div>
+
+  </div>
+
+</body>
+</html>    

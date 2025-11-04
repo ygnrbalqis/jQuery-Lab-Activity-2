@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 8: Listview #8</title>
+
+  <!-- jQuery Mobile CSS & JS -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+    $(document).on("mobileinit", function () {
+    $.mobile.ajaxEnabled = false;
+    });
+  </script>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+  <!--Homepage-->
+
+  <div data-role="page" id="page1" data-theme="a">
+
+    <div data-role="header" style="background-color:rgb(141,81,141); color:white; text-shadow:none;">
+      <h1>Listview</h1>
+    </div>
+
+    <div data-role="main" class="ui-content"> 
+      <h3>ReadOnly, Unordered List</h3>
+      <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="search it.. Get it">
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>bootstrap</li>
+      </ul>
+
+      <h3>ReadOnly, Ordered List</h3>
+      <ol data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="search it.. Get it" data-filter-reveal="true">
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>bootstrap</li>
+      </ol>
+
+      <h3>Clickable List</h3>
+      <ul data-role="listview" data-inset="true">
+        <li data-icon="home"><a href="#html">html</a></li>
+        <li data-icon="edit"><a href="#css">css</a></li>
+        <li data-icon="comment"><a href="#javascript">javascript</a></li>
+        <li data-icon="star"><a href="#bootstrap">bootstrap</a></li>
+      </ul>
+
+    <!-- Back to Home Button -->
+      <a href="index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left purple-btn" style="background-color:rgb(141,81,141); color:white; text-shadow:none;">Back to Home</a>
+    </div>    
+
+    <div data-role="footer" data-position="fixed" style="background-color:rgb(141,81,141); color:white; text-shadow:none;">
+      <h4>©<i>Yang Nur Balqis – 10DIT23F2022</i></h4>
+    </div>
+  
+  </div>
+
+</body>
+</html>

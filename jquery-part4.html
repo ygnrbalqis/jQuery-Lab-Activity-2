@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <title>Part 4: Meta Tags #4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This website is about jquery mobile">
+    <meta name="keywords" content="jquery, html, css, jquery mobile">
+
+  <!-- jQuery Mobile CSS & JS -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+    $(document).on("mobileinit", function () {
+    $.mobile.ajaxEnabled = false;
+    });
+  </script>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+ <div data-role="page">
+
+    <div data-role="header">
+      <h1>Meta Tags</h1>
+    </div>
+
+    <div data-role="main" class="ui-content"> 
+      <p>Meta tags ont the webpages.</p>
+  
+  <!-- Back to Home Button -->
+      <a href="index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Back to Home</a>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+      <h4>©<i>Yang Nur Balqis – 10DIT23F2022</i></h4>
+    </div>
+  
+ </div>
+
+</body>
+</html>

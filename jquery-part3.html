@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 3: Pages Basic Structure #3</title>
+
+  <!-- jQuery Mobile CSS & JS -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script>
+    $(document).on("mobileinit", function () {
+    $.mobile.ajaxEnabled = false;
+    });
+  </script>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <!--Homepage-->
+
+  <div data-role="page">
+
+     <div data-role="header">
+      <h1>Homepage</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <p>Welcome to Homepage.</p>
+      <a href="#about">About</a>
+    
+      <!-- Back to Home Button -->
+      <a href="index.html" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-left">Back to Home</a>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+      <h4>©<i>Yang Nur Balqis – 10DIT23F2022</i></h4>
+    </div>
+
+  </div>
+  
+</body>
+</html>
